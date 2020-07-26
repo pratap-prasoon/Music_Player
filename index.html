@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>
+        Music Player
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- SCRIPT FOR ADDING ICONS -->
+    <script src="https://kit.fontawesome.com/f1e91ef8d5.js" crossorigin="anonymous"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+</head>
+<!-- STRUCTURE OF WEBPAGE STARTS HERE -->
+
+<body>
+    <!-- HEADER OF WEBPAGE CONTAINS THE TOOLBAR -->
+    <header id="main-header">
+        <!-- TOOLBAR -->
+        <div class="toolbar">
+            <!-- THINGS THAT ARE SUPPOSED TO BE ON THE LEFT -->
+            <div id="left">
+
+                <div id="logo">
+                    <!-- LOGO OF STARLIGHT STUDIOS -->
+                    <a href="index.html"><img src="asset/img/imm.jpg" height=50px></a>
+
+                </div>
+                <div id="name">
+
+                    <a href="index.html">
+                        <h1>Music<br>Studio</h1>
+                    </a>
+
+                </div>
+
+            </div>
+            <div id="space">
+
+            </div>
+
+            <div id="right">
+                <!-- THINGS THAT ARE SUPPOSED TO BE ON THE RIGHT -->
+                <div id="search-bar">
+                    <!-- SEARCH BAR includes search button, input panel, mic button-->
+                    <div id="input-panel">
+                        <button type="submit" id="search-button">
+                                <i class="fa fa-search bg-12193e"></i>
+                            </button>
+                        <input type="text" id="search" placeholder=" Search" outline="none">
+                        <button type="submit" id="mic">
+                                <i class="fa fa-microphone bg-12193e"></i>
+                            </button>
+                    </div>
+
+
+                </div>
+
+                <div id="notification">
+                    <!-- Notification  -->
+                    <i class="fi-xnsuxl-bell-solid transform"></i>
+                </div>
+
+
+                <div id="Dp">
+                    <!-- My imgge -->
+                    <img src="asset/img/Dp.jpg">
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+    </header>
+    <!-- Main  -->
+
+    <main class="main-body">
+
+        <!--carousel Container-->
+        <section id="container" class="marg-top">
+            <!-- carousel images -->
+            <div class="container-image">
+
+                <img src="asset/img/EDM.jpg">
+
+            </div>
+            <div class="container-image">
+
+                <img src="asset/img/Top-20.jpg">
+
+            </div>
+            <div class="container-image">
+
+                <img src="asset/img/charts.jpg">
+
+            </div>
+
+        </section>
+        <!-- LATEST RELEASE SECTION -->
+        <section id="latest-release" class="marg-top">
+            <!-- heading -->
+            <h1 class="section-heading"><span>
+                Latest Release
+            </span></h1>
+            <div id="latest-release-container">
+                <!-- CREATING FURTHER divisions IN LATEST RELEASE SECTION -->
+                <div class="four-containers">
+                    <!-- first album -->
+                    <div class="album-cvr">
+                        <a href="#show">
+                            <img src="asset/img/eminem.jpg">
+                        </a>
+                    </div>
+                    <div class="_album">
+                        <B><a href="#show"><H5>Darkness</a></B>
+                        <h6>Eminem</h6>
+                    </div>
+                    <div class="dots">
+                        <button type="submit" id="more-button">
+                            <i class="fi-xwsuxl-ellipsis"></i>
+                            </button>
+                        <h6>4:20</h6>
+                   </div>
+
+                </div>
+                <div class="four-containers">
+                    <!-- second album -->
+                    <div class="album-cvr">
+                        <a href="#show">
+                            <img src="asset/img/Amy-virk.jpg">
+                        </a>
+                    </div>
+                    <div class="_album">
+                        <B><a href="#show"><H5>Main Suneya</H5></a></B>
+                        <h6>Amy virk</h6>
+                    </div>
+                    <div class="dots">
+                        <button type="submit" id="more-button">
+                        <i class="fi-xwsuxl-ellipsis"></i>
+                        </button>
+                        <h6>4:32</h6>
+                    </div>
+                </div>
+                <div class="four-containers">
+                    <!-- third album -->
+                    <div class="album-cvr">
+                        <a href="#show">
+                            <img src="asset/img/Selena.jpg">
+                        </a>
+                    </div>
+                    <div class="_album">
+                        <B><a href="#show"><H5>Boyfriend</H5></a></B>
+                        <h6>Selena Gomez</h6>
+                    </div>
+                    <div class="dots">
+                        <button type="submit" id="more-button">
+                            <i class="fi-xwsuxl-ellipsis"></i>
+                            </button>
+                        <h6>4:08</h6>
+                    </div>
+                </div>
+                <div class="four-containers">
+                    <!-- fourth album -->
+                    <div class="album-cvr">
+                        <a href="#show">
+                            <img src="asset/img/ed.jpg">
+                        </a>
+                    </div>
+                    <div class="_album">
+                        <B><a href="#show"><H5>Antisocial</H5></a></B>
+                        <h6>Ed sheeran</h6>
+                    </div>
+                    <div class="dots">
+                        <button type="submit" id="more-button">
+                            <i class="fi-xwsuxl-ellipsis"></i>
+                            </button>
+                        <h6>4:44</h6>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+        <!-- POPULAR ARTIST SECTION -->
+        <section id="popular-artists" class="marg-top">
+            <!-- heading -->
+            <h1 class="section-heading"><span>
+                Popular Artists
+            </span></h1>
+            <div id="popular-artists-container">
+                <!-- CREATING FURTHER divisions IN POPULAR ARTISTS SECTION -->
+                <!-- Artist 1 -->
+                <div class="popular-artist">
+                    <!-- artist image -->
+                    <div class="popular-artist-image">
+
+                        <img src="asset/img/alanWalker.jpg">
+                        <!-- play button that appears on hover -->
+                        <div class="artist-play-button">
+                            <a href="artist.html"><img src="asset/img/play-circle-regular.svg"></a>
+                        </div>
+
+                    </div>
+                    <!-- artist name -->
+                    <div class="popular-artist-name">
+                        <h5><b><p>Alan Walker<p></b></h5>
+                    </div>
+
+                </div>
+                <!-- Artist 2 -->
+                <div class="popular-artist">
+                    <!-- artist image -->
+                    <div class="popular-artist-image">
+
+                        <img src="asset/img/camila.jpg"></a>
+                        <!-- play button that appears on hover -->
+                        <div class="artist-play-button">
+                            <a href="artist.html"><img src="asset/img/play-circle-regular.svg"></a>
+                        </div>
+
+                    </div>
+                    <!-- artist name -->
+                    <div class="popular-artist-name">
+                        <h5><b><p>Camila Cabello<p></b></h5>
+                    </div>
+
+                </div>
+                <!-- Artist 3 -->
+                <div class="popular-artist">
+                    <!-- artist image -->
+                    <div class="popular-artist-image">
+
+                        <img src="asset/img/Taylor.jpg">
+                        <!-- play button that appears on hover -->
+                        <div class="artist-play-button">
+                            <a href="artist.html"><img src="asset/img/play-circle-regular.svg"></a>
+                        </div>
+
+                    </div>
+                    <!-- artist name -->
+                    <div class="popular-artist-name">
+                        <h5><b><p>Taylor Swift<p></b></h5>
+                    </div>
+
+                </div>
+                <!-- Artist 4 -->
+                <div class="popular-artist">
+                    <!-- artist image -->
+                    <div class="popular-artist-image">
+
+                        <img src="asset/img/drake.jpg">
+                        <!-- play button that appears on hover -->
+                        <div class="artist-play-button">
+                            <a href="artist.html"><img src="asset/img/play-circle-regular.svg"></a>
+                        </div>
+
+                    </div>
+                    <!-- artist name -->
+                    <div class="popular-artist-name">
+                        <h5><b><p>Drake<p></b></h5>
+                    </div>
+
+                </div>
+                <!-- Artist 5 -->
+                <div class="popular-artist">
+                    <!-- artist image -->
+                    <div class="popular-artist-image">
+
+                        <img src="asset/img/divine.png">
+                        <!-- play button that appears on hover -->
+                        <div class="artist-play-button">
+                            <a href="artist.html"><img src="asset/img/play-circle-regular.svg"></a>
+                        </div>
+
+                    </div>
+                    <!-- artist name -->
+                    <div class="popular-artist-name">
+                        <h5><b><p>Divine<p></b></h5>
+                    </div>
+
+                </div>
+                <!-- Artist 6 -->
+                <div class="popular-artist">
+                    <!-- artist image -->
+                    <div class="popular-artist-image">
+
+                        <img src="asset/img/zaynj.jpg">
+                        <!-- play button that appears on hover -->
+                        <div class="artist-play-button">
+                            <a href="artist.html"><img src="asset/img/play-circle-regular.svg"></a>
+                        </div>
+
+                    </div>
+                    <!-- artist name -->
+                    <div class="popular-artist-name">
+                        <h5><b><p>Zayn<p></b></h5>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+        <!-- STATION SECTION -->
+        <section id="Stations" class="marg-top">
+            <!-- adding logo  -->
+            <div id="station-logo">
+                <img src="asset/img/music.jpg">
+            </div>
+            <!-- creating container for various stations -->
+            <div id="station-container">
+                <!-- CREATING FURTHER divisions IN station container -->
+                <!-- Stations -->
+                <div class="station">
+                    <!-- station image -->
+                    <div class="station-image">
+
+                        <img src="asset/img/love.jpg">
+                    </div>
+
+
+
+                </div>
+                <div class="station">
+                    <!-- station image -->
+                    <div class="station-image">
+
+                        <img src="asset/img/calm.jpg">
+                    </div>
+
+
+
+                </div>
+                <div class="station">
+                    <!-- station image -->
+                    <div class="station-image">
+
+                        <img src="asset/img/retro.jpg">
+                    </div>
+
+
+
+                </div>
+                <div class="station">
+                    <!-- station image -->
+                    <div class="station-image">
+
+                        <img src="asset/img/gym.jpg">
+                    </div>
+
+
+
+                </div>
+                <div class="station">
+                    <!-- station image -->
+                    <div class="station-image">
+
+                        <img src="asset/img/rock.jpg">
+
+                    </div>
+
+
+
+                </div>
+                <div class="station">
+                    <!-- station image -->
+                    <div class="station-image">
+
+                        <img src="asset/img/rap.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- MOOD CONTAINER-->
+        <!-- Moods of Music Section which can be used to store similar music mixes -->
+        <section id="music-types">
+            <div class="types-container">
+                <div class="types-items">
+                    <p id="typep" class="pointer">
+                        Party
+                    </p>
+                    <img id="typeimg" src="asset/img/party.jpg" alt="Unable to Load">
+                </div>
+                <div class="types-items">
+                    <p id="typep" class="pointer">
+                        EDM
+                    </p>
+                    <img id="typeimg" src="asset/img/edmm.jpg" alt="Unable to Load">
+                </div>
+                <div class="types-items">
+                    <p id="typep" class="pointer">
+                        Trance
+                    </p>
+                    <img id="typeimg" src="asset/img/trance.jpg" alt="Unable to Load">
+                </div>
+            </div>
+
+        </section>
+        <!-- LATEST ENGLISH -->
+        <section id="latest-english-hindi">
+            <!-- heading -->
+            <h1 class="section-heading"><span>
+                            Latest English
+                        </span></h1>
+            <div class="english-hindi-song-container">
+                <!-- CREATING FURTHER divisions IN latest english SECTION -->
+                <!-- song 1 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/nobody.jpg">
+                        </a>
+                    </div>
+                    <!-- english name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Nobody’s Love<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 2 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/un.jpg">
+                        </a>
+                    </div>
+                    <!--  name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>UN DÍA<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 3 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/gf.jpg">
+                        </a>
+                    </div>
+                    <!-- english name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Girlfriend<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 4 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/had.jpg">
+                        </a>
+                    </div>
+                    <!-- english name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Had Enough</p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 5 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/be.jpg">
+                        </a>
+                    </div>
+                    <!-- english name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Be Like That<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 6 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/orphans.jpg">
+                        </a>
+                    </div>
+                    <!-- english name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Orphans<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- LATEST HINDI -->
+        <!-- I HAVE USED THE SAME CLASSES AND ID IN THIS SECTION AS I HAVE USED IN THE LATEST ENGLISH SECTION BECAUSE OF THE SIMILARITY OF THE SECTIONS -->
+        <section id="latest-english-hindi">
+            <!-- heading -->
+            <h1 class="section-heading"><span>
+                                    Latest Hindi
+                                </span></h1>
+            <div class="english-hindi-song-container">
+                <!-- CREATING FURTHER divisions IN latest hindi SECTION -->
+                <!-- song 1 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/main.jpg">
+                        </a>
+                    </div>
+                    <!-- HINDI name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Main Tumhara<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 2 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/ek.jpg">
+                        </a>
+                    </div>
+                    <!-- HINDI name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Ek Tarfa<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 3 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/bhedi.jpg">
+                        </a>
+                    </div>
+                    <!-- HINDI name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Bhedi<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 4 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/dil.jpg">
+                        </a>
+                    </div>
+                    <!-- HINDI name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Dil Bechara<p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 5 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/taare.jpg">
+                        </a>
+                    </div>
+                    <!-- HINDI name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Taare ginn</p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- song 6 -->
+                <div class="english-hindi-song">
+                    <!-- song image -->
+                    <div class="english-hindi-image">
+                        <a href="#show">
+                            <img src="asset/img/zara.jpg">
+                        </a>
+                    </div>
+                    <!-- HINDI name -->
+                    <div class="english-hindi-name">
+                        <a href="#show">
+                            <h5><b><p>Zara Thehro</p></b></h5>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <!-- ASIDE SECTION -->
+    <aside>
+        <!-- ASIDE CONTAINER -->
+        <div class="aside-container">
+            <!-- ASIDE HEAD -->
+            <div class="aside-head">
+                <div>
+                    <h1>My Playlist</h1>
+                </div>
+                <div id="queue">
+                    <h4>Queue</h4>
+                </div>
+                <div>
+                    <button type="submit" id="Queue-button">
+                        <i class="fi-xnsdxl-chevron-solid"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- QUEUE CONTAINER -->
+            <div class="aside-body">
+                <ul>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>01</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/starboy.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Starboy</H5>
+                            </a>
+                            <h6>The Weeknd</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>02</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/blind.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Blinding Lights</H5>
+                            </a>
+                            <h6>The Weeknd</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>03</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/main.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Main Tumhara</H5>
+                            </a>
+                            <h6>A.R. Rahman</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>04</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/way.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Way Down We Go</H5>
+                            </a>
+                            <h6>Kaleo</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>05</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/till.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Till I Collapse</H5>
+                            </a>
+                            <h6>Eminem</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>06</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/hall.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Hall of Fame</H5>
+                            </a>
+                            <h6>The Script</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>07</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/qismat.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Qismat</H5>
+                            </a>
+                            <h6>Amy Virk</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>08</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/teri.jpg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Teri Mitti</H5>
+                            </a>
+                            <h6>B Praak</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>09</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/what.jpeg"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Whatever It Takes</H5>
+                            </a>
+                            <h6>Imagine Dragons</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="queue-song">
+                        <div id="number">
+                            <p>10</p>
+                        </div>
+                        <!-- SONG IMAGE -->
+                        <div id="queue-image">
+                            <a href="#show"><img src="asset/img/thinking.jpg" alt="Unable to Load"></a>
+                        </div>
+                        <!-- SONG NAME -->
+                        <div id="queue-text">
+                            <a href="#show">
+                                <H5>Thinking out Loud</H5>
+                            </a>
+                            <h6>Ed Sheeran</h6>
+                        </div>
+                        <div id="fav">
+                            <button type="submit" class="fav-button">
+                                <i id="hvr" class="fi-xnsuxl-heart-solid"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- Song can be played by clicking on the Album pic as well as Name of any Song -->
+
+    <section id="music-player">
+        <div id="show" class="audio-container">
+            <audio controls loop autoplay>
+				<source src="asset/songs/hall of fame.mp3" type="audio/ogg">
+					Audio File not Supported
+			</audio>
+
+        </div>
+
+    </section>
+
+</body>
+
+
+
+</html>
